@@ -1,0 +1,214 @@
+[
+  {
+    "id": "btgg",
+    "name": "BTGG",
+    "proxy": true,
+    "url": "https://www.btgg.in",
+    "paths": {
+      "preset": "/search?q={k}&p={p}"
+    },
+    "xpath": {
+      "group": "//div[@class=\"item\"]",
+      "magnet": "./div[2]/a/@href",
+      "name": "./div[1]/a",
+      "size": "./div[2]/span[1]",
+      "hot": "./div[2]/span[2]",
+      "date": "./div[2]/span[3]"
+    }
+  },
+  {
+    "id": "idope",
+    "name": "idope",
+    "proxy": true,
+    "url": "https://idope.se",
+    "paths": {
+      "preset": "/torrent-list/{k}/?p={p}",
+      "size": "/torrent-list/{k}/?p={p}&o=-2"
+    },
+    "xpath": {
+      "group": "//div[@class=\"resultdiv\"]",
+      "magnet": "./div[1]/a/@href",
+      "name": "./div[1]/a",
+      "size": "./div[2]/div[3]/div[2]",
+      "date": "./div[2]/div[2]/div[2]",
+      "detail": {
+        "files": "//div[@class=\"filetag\"]"
+      }
+    }
+  },
+  {
+    "id": "btsow",
+    "name": "BTSOW",
+    "proxy": true,
+    "url": "https://btsow.rest",
+    "paths": {
+      "preset": "/search/{k}/page/{p}"
+    },
+    "xpath": {
+      "group": "//div[@class='row']",
+      "magnet": "./a/@href",
+      "name": "./a/div[1]",
+      "size": "./div[1]",
+      "date": "./div[2]",
+      "detail": {
+        "files": "//div[@class=\"detail data-list\"]/div/text()"
+      }
+    }
+  },
+  {
+    "id": "bt4g",
+    "name": "BT4G",
+    "proxy": true,
+    "url": "https://bt4g.org",
+    "paths": {
+      "time": "/search/{k}/{p}",
+      "size": "/search/{k}/bysize/{p}",
+      "hot": "/search/{k}/byrequests/{p}"
+    },
+    "xpath": {
+      "group": "/html/body/main/div/div[3]/div/div",
+      "magnet": "./h5/a/@href",
+      "name": "./h5/a",
+      "size": "./span[4]/b",
+      "date": "./span[2]/b",
+      "detail": {
+        "files": "//*[@id=\"wall\"]/div[6]/div[2]/ol/li"
+      }
+    }
+  },
+  {
+    "id": "bthub",
+    "name": "BThub",
+    "proxy": true,
+    "url": "https://bthub4.xyz",
+    "paths": {
+      "preset": "/cn/main-search-kw-{k}-{p}.html",
+      "size": "/cn/main-search-kw-{k}-length-{p}.html",
+      "time": "/cn/main-search-kw-{k}-time-{p}.html",
+      "hot": "/cn/main-search-kw-{k}-requests-{p}.html"
+    },
+    "xpath": {
+      "group": "//div[@class='search-item detail-width']",
+      "magnet": "./div[3]/span[5]/a/@href",
+      "name": "./div[1]/h3/a",
+      "size": "./div[3]/span[3]/b",
+      "date": "./div[3]/span[2]/b",
+      "hot": "./div[3]/span[4]/b"
+    }
+  },
+  {
+    "id": "zooqle",
+    "name": "Zooqle",
+    "proxy": true,
+    "url": "https://zooqle.com",
+    "paths": {
+      "preset": "/search?pg={p}&q={k}&v=t"
+    },
+    "xpath": {
+      "group": "//*[@class='table table-condensed table-torrents vmiddle']/tr",
+      "magnet": "./td[3]/ul/li/a/@href",
+      "name": "./td[2]/a",
+      "size": ".//td[4]/div/div",
+      "date": "./td[5]"
+    }
+  },
+  {
+    "id": "dmhy",
+    "name": "动漫花园",
+    "proxy": true,
+    "url": "https://dmhy.anoneko.com",
+    "paths": {
+      "time": "/topics/list/page/{p}?keyword={k}"
+    },
+    "xpath": {
+      "group": "//*[@id=\"topic_list\"]/tr",
+      "magnet": "./td[4]/a/@href",
+      "name": "./td[3]/a",
+      "size": "./td[5]",
+      "date": "./td[1]/text()",
+      "hot": "./td[8]",
+      "detail": {
+        "files": "//div[@class=\"file_list\"]/ul/li"
+      }
+    }
+  },
+  {
+    "id": "thepiratebay_z",
+    "name": "The Pirate Bay",
+    "proxy": true,
+    "url": "https://thepiratebay.unblocker.cc",
+    "paths": {
+      "preset": "/search/{k}/{p}/7/",
+      "time": "/search/{k}/{p}/3/",
+      "size": "/search/{k}/{p}/5/",
+      "hot": "/search/{k}/{p}/9/"
+    },
+    "xpath": {
+      "group": "//table[@id='searchResult']/tr",
+      "magnet": "./td[2]/a[1]/@href",
+      "name": "./td[2]/div/a",
+      "size": "./td[2]/font/text()",
+      "date": "./td[2]/font/text()",
+      "hot": "./td[4]"
+    }
+  },
+  {
+    "id": "extratorrent",
+    "name": "ExtraTorrent",
+    "proxy": true,
+    "url": "https://extratorrent.si",
+    "paths": {
+      "preset": "/search/?page={p}&search={k}&srt=added",
+      "size": "/search/?page={p}&search={k}&srt=size&order=desc"
+    },
+    "xpath": {
+      "group": "//tr[@class='tlr']",
+      "magnet": "./td[1]/a[2]/@href",
+      "name": "./td[3]/a",
+      "size": "./td[5]",
+      "date": "./td[4]",
+      "hot": "./td[6]"
+    }
+  },
+  {
+    "id": "1337x",
+    "name": "1337X（英文）",
+    "proxy": true,
+    "url": "https://1337x.to",
+    "paths": {
+      "preset": "/search/{k}/{p}/",
+      "time": "/sort-search/{k}/time/desc/{p}/",
+      "size": "/sort-search/{k}/size/desc/{p}/",
+      "hot": "/sort-search/{k}/leechers/desc/{p}/"
+    },
+    "xpath": {
+      "group": "//div[@class='table-list-wrap']/table/tbody/tr",
+      "name": "./td[1]/a[2]",
+      "size": "./td[5]",
+      "date": "./td[4]",
+      "hot": "./td[8]",
+      "detail": {
+        "root": "/html/body/main/div/div/div/div[2]",
+        "magnet": "./div[1]/ul[1]/li[1]/a/@href"
+      }
+    }
+  },
+  {
+    "id": "wuqianei",
+    "name": "吴签磁力",
+    "proxy": true,
+    "url": "https://wuqianei.xyz",
+    "paths": {
+      "preset": "/search?keyword={k}"
+    },
+    "xpath": {
+      "group": "/html/body/div[1]/div/div[2]/div[6]",
+      "name": "./div[1]/a/span[@class=\"highlight\"]",
+      "size": "./div[3]/h4/small/span[1]",
+      "date": "./div[3]/h4/small/span[3]",
+      "detail": {
+        "magnet": "//*[@id=\"magnet\"]"
+      }
+    }
+  }
+]
